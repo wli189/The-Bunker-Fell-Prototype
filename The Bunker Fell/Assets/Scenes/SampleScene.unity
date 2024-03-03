@@ -219,24 +219,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3588518367900892581}
   m_PrefabAsset: {fileID: 0}
---- !u!143 &1629614110
-CharacterController:
+--- !u!114 &1629614110
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1629614109}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c87b793baeb344e398539eb6aef914a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+  rotationSpeed: 90
 --- !u!1001 &2389759484001534763
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -313,6 +309,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3588518368403167299, guid: c94b1f2515b874bde9d0ae0c9bd5471f,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1000
+      objectReference: {fileID: 0}
     - target: {fileID: 3910887046103618506, guid: c94b1f2515b874bde9d0ae0c9bd5471f,
         type: 3}
       propertyPath: m_RootOrder
