@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44671863, g: 0.496575, b: 0.5750147, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 146676171}
   - component: {fileID: 146676173}
   - component: {fileID: 146676172}
+  - component: {fileID: 146676174}
   m_Layer: 0
   m_Name: Camera (3)
   m_TagString: Untagged
@@ -160,7 +161,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146676170}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &146676173
 Camera:
   m_ObjectHideFlags: 0
@@ -204,6 +205,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &146676174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146676170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e7ea5ac9afa549b9124270126a391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &262439615
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,6 +402,7 @@ GameObject:
   - component: {fileID: 1392676844}
   - component: {fileID: 1392676846}
   - component: {fileID: 1392676845}
+  - component: {fileID: 1392676847}
   m_Layer: 0
   m_Name: Camera (1)
   m_TagString: Untagged
@@ -417,7 +431,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392676843}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1392676846
 Camera:
   m_ObjectHideFlags: 0
@@ -461,6 +475,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1392676847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392676843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e7ea5ac9afa549b9124270126a391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1481375459 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3588518368054563028, guid: c94b1f2515b874bde9d0ae0c9bd5471f,
@@ -543,6 +569,7 @@ GameObject:
   - component: {fileID: 1867498157}
   - component: {fileID: 1867498159}
   - component: {fileID: 1867498158}
+  - component: {fileID: 1867498160}
   m_Layer: 0
   m_Name: Camera (2)
   m_TagString: Untagged
@@ -571,7 +598,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867498156}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1867498159
 Camera:
   m_ObjectHideFlags: 0
@@ -615,6 +642,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1867498160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1867498156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e7ea5ac9afa549b9124270126a391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1870546598
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,6 +665,7 @@ GameObject:
   - component: {fileID: 1870546599}
   - component: {fileID: 1870546601}
   - component: {fileID: 1870546600}
+  - component: {fileID: 1870546602}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -654,7 +694,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870546598}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1870546601
 Camera:
   m_ObjectHideFlags: 0
@@ -698,6 +738,18 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1870546602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870546598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090e7ea5ac9afa549b9124270126a391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2389759484001534763
 PrefabInstance:
   m_ObjectHideFlags: 0
