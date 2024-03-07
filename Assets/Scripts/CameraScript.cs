@@ -4,80 +4,62 @@ using UnityEngine;
 
 public class CameraScript : MonoBehaviour
 {
-
     public GameObject camera1;
     public GameObject camera2;
     public GameObject camera3;
     public GameObject camera4;
+
+    private GameObject[] cameras = {}; 
 
     public int currentCamera = 1;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        //Initialize array
+        cameras = new GameObject[4];
+        cameras[0] = camera1;
+        cameras[1] = camera2;
+        cameras[2] = camera3;
+        cameras[3] = camera4;
+
+        SetCamera();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             currentCamera++;
-
-            if (currentCamera > 4)
+            if (currentCamera >= cameras.Length)
             {
-                currentCamera = 1;
+                currentCamera = 0;
             }
+            SetCamera();
+        }
 
-            switch (currentCamera)
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            currentCamera--;
+            if (currentCamera < 0)
             {
-                case 1:
-                    CameraOne();
-                    break;
-                case 2:
-                    CameraTwo();
-                    break;
-                case 3:
-                    CameraThree();
-                    break;
-                case 4:
-                    CameraFour();
-                    break;
+                currentCamera = cameras.Length - 1;
             }
-
+            SetCamera();
         }
     }
 
-    void CameraOne()
+    void SetCamera()
     {
-        camera1.SetActive(true);
-        camera2.SetActive(false);
-        camera3.SetActive(false);
-        camera4.SetActive(false);
-    }
-
-    void CameraTwo()
-    {
-        camera1.SetActive(false);
-        camera2.SetActive(true);
-        camera3.SetActive(false);
-        camera4.SetActive(false);
-    }
-
-    void CameraThree()
-    {
-        camera1.SetActive(false);
-        camera2.SetActive(false);
-        camera3.SetActive(true);
-        camera4.SetActive(false);
-    }
-
-    void CameraFour()
-    {
-        camera1.SetActive(false);
-        camera2.SetActive(false);
-        camera3.SetActive(false);
-        camera4.SetActive(true);
+        for (int i = 0; i < cameras.Length; i++)
+        {
+            if (i == currentCamera)
+            {
+                cameras[i].SetActive(true);
+                continue;
+            }
+            cameras[i].SetActive(false);
+        }
     }
 }
